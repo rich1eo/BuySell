@@ -4,7 +4,11 @@
     <title>BuySell</title>
 </head>
 <body>
-<h1>BuySell</h1>
+<h1>BuySell | <a href="/login">Войти</a> </h1>
+<form action="/logout" method="post">
+    <input type="hidden" name="${_csrf.token}">
+    <input type="submit" value="Выйти"/>
+</form>
 <h4>Все товары</h4>
 <form action="/" method="get">
     Поиск по названию объявления: <input type="text" name = "title"> <br>
